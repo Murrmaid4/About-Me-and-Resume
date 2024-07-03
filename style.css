@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
  font-size: 18px;
- font-family:  'Plus Jakarta Sans', sans-serif;
+ font-family: "Poppins", sans-serif;
  --dark: #1F2933;
- --light: #E4E7EB;
+ --light: #f7f7f7;
  --purp: #D478FF;
  
 }
+
+
 
 /* Global */
 
@@ -13,9 +17,9 @@
 header {
     
     /* border:1px solid red; */
-    position:static;
+    position:absolute;
     height: 100px;
-    background-color: var(--dark);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,14 +33,24 @@ header nav{
     margin-right:75px;
     /* border:1px solid red; */
   
-  } 
+  }
+
+  
+  .img-wrapper {
+
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    
+  }
 .logo {
    
     padding: 0px 0px 0px 75px;
     
     /* border:1px solid red; */
     
-    height: 90px;
+    width: 75px;
     display:inline;
   }
 
@@ -72,6 +86,7 @@ header nav{
 
   height: 75vh;
   position: relative;
+  background: linear-gradient(0.90turn, #692A7B, #E35F5F);
 }
 
 .hero-content{
@@ -101,7 +116,7 @@ header nav{
     background: rgba(0,0,0,0.6);
   }
 .hero-content h1 {
-  font-family: 'Lobster Two', cursive;
+  
   text-align: center;
   font-weight: bold;
   font-size: 85px;
@@ -109,7 +124,7 @@ header nav{
 }
 
 .hero-content p{
-  font-family: 'Lobster Two', cursive;
+  
   font-size: 40px;
   text-align: center;
   color:var(--purp);
@@ -214,9 +229,10 @@ header nav{
     }
 
     .hero-content h1 {
-      font-family: 'Lobster Two', cursive;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
       text-align: center;
-      font-weight: bold;
+     
       font-size: 64px;
       line-height: 1.1;
     }
@@ -292,7 +308,7 @@ header nav{
 
 
 .dark{
-   background-color: var(--dark);
+  background: var(--gradient1, linear-gradient(90deg, #692A7B 0%, #241F62 100%));
  }
 
  .light{
@@ -352,7 +368,7 @@ header nav{
 }
 .card a{
   color: var(--light);
-  font-family:  'Plus Jakarta Sans', sans-serif;
+ 
 }
 
 .card button:hover{
@@ -362,8 +378,11 @@ header nav{
 
 footer{
      color: #fff !important;
-    height: 125px;
+     font-weight: 700;
+  
+    height: 80px;
     display: flex;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
