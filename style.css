@@ -19,7 +19,7 @@ header {
     /* border:1px solid red; */
     position:absolute;
     height: 100px;
-    background-color: transparent;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
