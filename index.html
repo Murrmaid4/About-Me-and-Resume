@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
 
-
-
-    <title>Brandi Murray - Web Developer </title>
-</head>
-<body>
-    <header>
-        <div class="img-wrapper"><img src="./assets/logo.png" class="logo" alt="personal logo"></div>
-        <nav>
-          <a class="link display" href="./assets/Resume_brandi_murray.pdf" target="_blank">My Resume</a><a class="link hide" href="./assets/Resume_brandi_murray.pdf" target="_blank"> Who, Me?</a>
-          <!-- <a class="link display" href="#inspo">Inspiration Links</a><a class="link hide" href="#inspo">The Inspo!</a>
-          <a class="link display" href="#projects">My Projects</a><a class="link hide" href="#projects">The Work!</a> -->
-         
-        </nav>
-        
-      </header>
+    <title>Brandi Murray - Web Developer</title>
+  </head>
+  <body>
     <div class="hero">
-        <!-- <video autoplay muted loop>
+      <!-- added header/nav in hero div to have nav transparent in this div -->
+      <header>
+        <div class="img-wrapper">
+          <img src="./assets/logo.png" class="logo" alt="personal logo" />
+        </div>
+        <nav>
+          <a
+            class="link"
+            href="./assets/Resume_brandi_murray.pdf"
+            target="_blank"
+            >My Resume</a
+          >
+
+          <a class="link" href="#projects">My Projects</a>
+        </nav>
+      </header>
+
+      <!-- code for video background if you ever want to replace the hero again -->
+      <!-- <video autoplay muted loop>
             <source src="./assets/ocean-vid.mp4" type="video/mp4" />
           </video> -->
-          <!-- <div class="overlay"></div> -->
-            <div class="hero-content"> 
-     <h1>Hi!</h1>
-     <h1>I'm Brandi!</h1>
-     <img src="./assets/computer-svg.png">
-
-    
-</div>
-
+      <!-- <div class="overlay"></div> -->
+      <div class="hero-content">
+        <div class="hero-text-box">
+          <h1>Hi!</h1>
+          <h1>I'm Brandi!</h1>
+        </div>
+        <div class="">
+            
+          <img src="./assets/computer-svg.svg" />
+        </div>
+      </div>
     </div>
     <div class="container" id="about">
-      
-       <div class="about-grid">
-      
-       <p class="bio"><span class="first-text"> Hello!</span><br/> <br/>I completed a Full-Stack Bootcamp from UCF in 2021 and 
-        have several years experience in Full-Stack development <br/><br/>I also completed my Bachelors at UCF in Digital Media
-        with a specialization in web and mobile app development. <br/><br/>
-        <button class="resume-btn"> <a href="./assets/Resume_brandi_murray.pdf" target="_blank">View my resume </a> </button>
-       </p> <img src="./assets/pfp.png" class="selfie" alt="Brandi Family photo">
-    </div>
-
-
+      <div class="about-grid">
+        <div><h2>And I love to code!</h2>
+        <img src="./assets/pfp.png" class="selfie" alt="Brandi Family photo" /></div>
+        <p class="bio">
+          <span class="first-text"> Hello!</span><br />
+          <br />I completed a Full-Stack Bootcamp from UCF in 2021 and have
+          several years experience in Full-Stack development <br /><br />I also
+          completed my Bachelors at UCF in Digital Media with a specialization
+          in web and mobile app development. <br /><br />
+          <button class="resume-btn">
+            <a href="./assets/Resume_brandi_murray.pdf" target="_blank"
+              >View my resume
+            </a>
+          </button>
+        </p>
+       
+      </div>
     </div>
     <!-- <div class="container" id="inspo">
         <div class="flex lite"> <h2>Links of Inspiration</h2> </div>
@@ -80,31 +92,50 @@
     </div>
 </div> -->
 
-<div class="container" id="projects">
-    <div class="flex"> <h2> My Projects </h2> </div>
-<div class="small-container"><p>Here are just a few of the projects I completed at my Full Stack coding bootcamp:</p></div>
-    <div class="proj-grid flex">
-
-       <div class="card dark proj" onclick="window.open(' https:mascarelloa.github.io/astroscope/','_newtab');">
-           <img src="./assets/astroscope.png" class="card-img"><h4>Made this project using Html, CSS, Javascript and API's</h4>
+    <div class="container" id="projects">
+      <div class="flex"><h2>My Projects</h2></div>
+      <div class="small-container">
+        <p>
+          Here are just a few of the projects I completed at my Full Stack
+          coding bootcamp:
+        </p>
+      </div>
+      <div class="flex ">
+        <div class="proj-grid">
+        <div
+          class="card dark proj"
+          onclick="window.open(' https:mascarelloa.github.io/astroscope/','_newtab');"
+        >
+          <img src="./assets/astroscope.png" class="card-img" />
+          <h4>Made this project using Html, CSS, Javascript and API's</h4>
         </div>
-        <div class="card dark proj" onclick="window.open('https:murrmaid4.github.io/JS-Random-Password-Generator/','_newtab');">
-            <img src="./assets/pw-gen-ss.jpg" class="card-img"><h4>Made this project using Html, CSS, and Javascript</h4>
-         </div>
-         <div class="card dark proj" onclick="window.open('https:murrmaid4.github.io/Js-coding-quiz/','_newtab');">
-            <img src="./assets/work-day-ss.jpg" class="card-img"><h4>Made this project using Html, CSS, Javascript and Moment.js</h4>
-         </div>
+        <div
+          class="card dark proj"
+          onclick="window.open('https:murrmaid4.github.io/JS-Random-Password-Generator/','_newtab');"
+        >
+          <img src="./assets/pw-gen-ss.jpg" class="card-img" />
+          <h4>Made this project using Html, CSS, and Javascript</h4>
+        </div>
+        <div
+          class="card dark proj"
+          onclick="window.open('https:murrmaid4.github.io/Js-coding-quiz/','_newtab');"
+        >
+          <img src="./assets/work-day-ss.jpg" class="card-img" />
+          <h4>Made this project using Html, CSS, Javascript and Moment.js</h4>
+        </div>
     </div>
-     
+      </div>
+    </div>
 
-</div>
-
-<footer class="dark">
-<div class ="social-links-wrap">
-    <p>Made with ❤️ by Brandi M. © <script>document.write(new Date().getFullYear())</script></p>
-</div>
-
-</footer>
-    
-</body>
+    <footer class="dark">
+      <div class="social-links-wrap">
+        <p>
+          Made with ❤️ by Brandi M. ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
